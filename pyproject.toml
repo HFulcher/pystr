@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pystr"
+version = "0.1.0"
+description = "Python relay for Nostr using FastAPI and SQLite"
+authors = ["Huw Fulcher <huwfulcher@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.99.1"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+websockets = "^11.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
